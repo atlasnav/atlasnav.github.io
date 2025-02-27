@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="ATLAS Navigator: Active Task-driven LAnguage-embedded Gaussian Splatting">
+  <meta name="keywords" content="atlas, language-embedded gaussian splatting, exploration, navigation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ATLAS Navigator: Active Task-driven LAnguage-embedded Gaussian Splatting</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/UPenn-GRASP-Stacked-Logo-ko.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">ATLAS Navigator: Active Task-driven LAnguage-embedded Gaussian Splatting</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://dexterong.com/">Dexter Ong</a>,</span>
+            <span class="author-block">
+              <a href="https://tyuezhan.github.io/">Yuezhan Tao</a>,</span>
+            <span class="author-block">
+              <a href="https://varunmurali.webflow.io/">Varun Murali</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=IyoEsBQAAAAJ&hl=en">Igor Spasojevic</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.kumarrobotics.org/">Vijay Kumar</a>,
+            </span>
+            <span class="author-block">              
+              <a href="https://pratikac.github.io/">Pratik Chaudhari</a>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">GRASP Laboratory, University of Pennsylvania</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark" target="blank">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We address the challenge of task-oriented navigation
+            in unstructured and unknown environments, where robots must
+            incrementally build and reason on rich, metric-semantic maps in
+            real time. Since tasks may require clarification or re-specification,
+            it is necessary for the information in the map to be rich enough to
+            enable generalization across a wide range of tasks. To effectively
+            execute tasks specified in natural language, we propose a hi-
+            erarchical representation built on language-embedded Gaussian
+            splatting that enables both sparse semantic planning that lends
+            itself to online operation and dense geometric representation
+            for collision-free navigation. We validate the effectiveness of our
+            method through real-world robot experiments conducted in both
+            cluttered indoor and kilometer-scale outdoor environments, with
+            a competitive ratio of about 60% against privileged baselines.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+</section>
+
+<!-- Paper video. -->
+<!-- <section class="section">
+  <div class="container is-max-desktop">    
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="" frameborder="0"
+            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- system diagram -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">System Overview</h2>
+        <img src="./static/images/system_diagram.png" alt="system diagram">
+      </div>
+    </div>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified">
+          <p>
+            Our framework consists of three components. The front-end processing [A] extracts and compresses dense pixel-level language
+            features from the image. The module also clusters features based on geometry and semantics in the map. The hierarchical mapper [B]
+            runs bottom-up, ingesting the RGB and depth images and the odometric path from the robot to build a map. The top level of the map
+            contains the submaps, the middle level the regions, and the bottom level the objects. The local map compsises the loaded submaps.
+            The other submaps are unloaded to save memory (shown here in gray). The planning module [C] consists of a discrete planner that
+            operates on the sparse map and generates a reference path, while the dense Gaussians in the local map are used to find the trajectory
+            to be executed on the robot.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+
+</section>  -->
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
